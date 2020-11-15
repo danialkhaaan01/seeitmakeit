@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <style>
+                body  {
+                  background-image: url("bg1.jpeg");
+                 background-size: cover;
+                }
+                </style>
+                </head>
+                <body>
+  <title>See it, make it, work it</title>
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <h1>University of Advancing Technology</h1>
+  <img src="uat.png" id="logo" alt="Logo for nettside"  height="200" width="100">
+  </body>
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '200px';
+    document.getElementById('content').style.marginLeft = '200px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
+</head>
+<body>
+
+  <div id="content">
+
+    <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="index.html" class="item"><i class="fas fa-home icon"></i>Home</a>
+      <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About</a>
+      <a href="subjects.html" class="item"><i class="fas fa-graduation-cap icon"></i>Subjects at UAT</a>
+     
+      <a href="faq.html" class="item"><i class="fas fa-question icon"></i>FAQ</a>
+      <a href="contact.html" class="item"><i class="fas fa-envelope-square icon"></i>Contact Us</a>
+    </div>
+    </div>
+
+    <div class="row input-container">
+        
+        <div class="col-xs-12">
+            <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label> 
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label> 
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="styled-input" style="float:right;">
+                <input type="text" required />
+                <label>Phone Number</label> 
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="btn-lrg submit-btn">Send Message</div>
+        </div>
+      </div>
+      <ul>
+        <h5>Contact Us</h5>
+        
+      
+      </ul>
+    </div>
+

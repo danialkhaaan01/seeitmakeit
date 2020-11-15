@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <style>
+                body  {
+                  background-image: url("bg1.jpeg");
+                 background-size: cover;
+                 height: 142vh;
+                }
+                </style>
+                </head>
+                <body>
+  <title>See it, make it, work it</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <h1>University of Advancing Technology</h1>
+  <img src="uat.png" id="logo" alt="Logo for nettside"  height="200" width="100">
+  </body>
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '200px';
+    document.getElementById('content').style.marginLeft = '200px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
+</head>
+<body>
+
+  <div id="content">
+
+    <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="index.html" class="item"><i class="fas fa-home icon"></i>Home</a>
+      <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About</a>
+      <a href="subjects.html" class="item"><i class="fas fa-graduation-cap icon"></i>Subjects at UAT</a>
+     
+      <a href="faq.html" class="item"><i class="fas fa-question icon"></i>FAQ</a>
+      <a href="contact.html" class="item"><i class="fas fa-envelope-square icon"></i>Contact Us</a>
+    </div>
+    </div>
+    <section class="faq-section">
+        <div class="container">
+          <div class="row">
+                            <!-- ***** FAQ Start ***** -->
+                            <div class="col-md-6 offset-md-3">
+                                    <h2>Frequently Asked Questions</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6 offset-md-3">
+                                <div class="faq" id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-1">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                                    <span class="badge">1</span>What is the minimum grade you need to have in order to take master?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>The minimum grade you need to have in order to take masters is a C on your bachelordegree! </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-2">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                                    <span class="badge">2</span> How will Corona affect our education?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>We all know that the virus has changed our daily lives quite a bit. We in UAT are working on making it as easy as possible for our students, so that you guys can learn effectively as it was before the pandemic started.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="faqHeading-3">
+                                            <div class="mb-0">
+                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                                    <span class="badge">3</span>Will there be a sponsor group this year?
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <p>This year - unfortunately there will not be any sponsor group where you can get to know each other due to the virus. Although, we will try do some activities the first week on zoom, so that you guys can atleast try to "socialize" with other students.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                          </div>
+                        </div>
+                        </section>
+      
+     
+      </div>
+      <ul>
+        
+      
+      </ul>
+    </div>
+
+
+  
+
+
+</body>
+</html>
+
+
+

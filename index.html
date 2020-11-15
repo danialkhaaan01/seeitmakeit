@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+                </head>
+                <body>
+  <title>See it, make it, work it</title>
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <h1>University of Advancing Technology</h1>
+  <img src="uat.png" alt="" class="logo">
+  </body>
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '200px';
+    document.getElementById('content').style.marginLeft = '200px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
+</head>
+<body>
+
+  <div id="content">
+
+    <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="index.html" class="item"><i class="fas fa-home icon"></i>Home</a>
+      <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About</a>
+      <a href="subjects.html" class="item"><i class="fas fa-graduation-cap icon"></i>Subjects at UAT</a>
+     
+      <a href="faq.html" class="item"><i class="fas fa-question icon"></i>FAQ</a>
+      <a href="contact.html" class="item"><i class="fas fa-envelope-square icon"></i>Contact Us</a>
+    </div>
+
+      
+      <ul>
+        
+      
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="bg1.jpeg" style="width:80%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="bg2.jpeg" style="width:80%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="bg3.jpeg" style="width:80%">
+  
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); 
+    }
+    </script>
+
+
+</body>
+</html>
+
+
+
